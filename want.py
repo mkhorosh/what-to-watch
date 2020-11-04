@@ -1,7 +1,7 @@
 import random
 import  json
 
-file_path = 'C:\\Users\\Marina\\rep\\what_to_watch\\list.json'
+file_path = 'C:\\Users\\Marina\\PycharmProjects\\what-to-watch\\list.json'
 print("welcome, let's watch some great episode!")
 with open(file_path, 'r') as file:
     shows = json.loads(file.read())
@@ -30,6 +30,6 @@ elif (name == 'the big bang theory'):
     page = 'https://big-bang-theory.online/episodes/'+str(show_season)+'-season-'+str(show_episode)+'-seriya'
 if (input() == 'n'):
     page = '"null"'
-page_path = 'C:\\Users\\Marina\\rep\\what_to_watch\\page.txt'
+page_path = 'C:\\Users\\Marina\\PycharmProjects\\what-to-watch\\page.txt'
 with open(page_path, 'w') as file:
     file.write(page)
